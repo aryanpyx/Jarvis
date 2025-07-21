@@ -1,27 +1,54 @@
 # Jarvis AI Assistant
-  
-This is a project built with [Chef](https://chef.convex.dev) using [Convex](https://convex.dev) as its backend.
- You can find docs about Chef with useful information like how to deploy to production [here](https://docs.convex.dev/chef).
-  
-This project is connected to the Convex deployment named [`quick-cricket-299`](https://dashboard.convex.dev/d/quick-cricket-299).
-  
-## Project structure
-  
-The frontend code is in the `app` directory and is built with [Vite](https://vitejs.dev/).
-  
-The backend code is in the `convex` directory.
-  
-`npm run dev` will start the frontend and backend servers.
+# 🧠 JARVIS - AI Voice Assistant
 
-## App authentication
+**JARVIS** is a full-stack, multilingual, voice-enabled AI assistant inspired by the Iron Man universe. This intelligent assistant supports GPT-powered conversations, wake word detection, auto-speaking replies, smart command recognition, and a sleek responsive UI — making it your perfect virtual companion across desktop and mobile
 
-Chef apps use [Convex Auth](https://auth.convex.dev/) with Anonymous auth for easy sign in. You may wish to change this before deploying your app.
+---
 
-## Developing and deploying your app
+## 🚀 Features
 
-Check out the [Convex docs](https://docs.convex.dev/) for more information on how to develop with Convex.
-* If you're new to Convex, the [Overview](https://docs.convex.dev/understanding/) is a good place to start
-* Check out the [Hosting and Deployment](https://docs.convex.dev/production/) docs for how to deploy your app
+- 🤖 **AI-Powered Conversations** - Uses GPT-4o-mini for intelligent replies
+- 🌐 **Multilingual Support** - Chat in **English** and **हिंदी**
+- 🎤 **Voice Input** - Speak instead of typing using Speech Recognition
+- 🔊 **Text-to-Speech** - JARVIS speaks responses back to you in selected language
+- 🗣️ **Wake Word Detection** - Say "JARVIS" or "जार्विस" to activate hands-free
+- 🧠 **Smart Send** - Automatically detects commands like “send” or “भेजो”
+- 💬 **Chat History** - View and manage previous conversations
+- ⚙️ **Custom Settings** - Change language, theme, personality, and voice options
+- 🔐 **Secure Auth** - Login system powered by Convex Auth
+- 📱 **Responsive UI** - Works seamlessly on mobile, tablet, and desktop
+
+---
+=> Used app bilder models and LLM models like chatgpt, trae, chef by convex etc.
+---
+## 🎮 Demo
+
+Live Demo: http://localhost:5174/
+
+> ✅ Interact with JARVIS in real time with voice and chat!
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js, TypeScript, Tailwind CSS
+- **Backend/LLM**: GPT-4o-mini / Gemini API fallback
+- **Voice Recognition**: Web Speech API (SpeechRecognition)
+- **Text-to-Speech**: SpeechSynthesis API
+- **Wake Word Detection**: Custom JS Engine with language detection
+- **Auth & Storage**: Convex.dev
+- **Deployment**: Vercel / Netlify
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/aryanpyx/jarvis-ai.git
+cd jarvis-ai
+npm install
+npm run dev
+
 * Read the [Best Practices](https://docs.convex.dev/understanding/best-practices/) guide for tips on how to improve you app further
 
 ## HTTP API
